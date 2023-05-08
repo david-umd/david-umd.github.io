@@ -20,7 +20,7 @@ function backToTop(){
 let dropdown = document.getElementById("dropClick");
 let menu = document.getElementById("dropdown");
 
-function dropClick(){
+function dropdownclick(){
     if (menu.style.display == "block") {
         menu.style.display = "none";
     } else {
