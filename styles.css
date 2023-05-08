@@ -23,6 +23,12 @@ a.link{
 #dropClick:hover{
     cursor: pointer;
 }
+
+#dropClick {
+    background-color: white;
+    border: none;
+}
+
 .dropdownContent {
     padding-left: 10px;
     padding-right: 10px;
