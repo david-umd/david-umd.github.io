@@ -1,0 +1,1452 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CMSC131 Final Exam Study Guide</title>
+    <style source-path="global-text-editor-styles">.mde-cm-wrapper .CodeMirror {
+      font-size: 13px;
+      font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+      font-weight: normal;
+      line-height: 1.5;
+    }
+    .mde-preview pre code, .mde-preview code {
+      font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    }</style><style source-path="global-preview-styles">.mde-preview {
+      font-size: 15px
+    }</style><style source-path="C:\Users\flluu\Downloads\Inkdrop-demo-5.4.1-Windows\resources\app.asar\node_modules\export-print\styles\index.css" priority="0">@media print {
+  .mde-preview table {
+    overflow: hidden;
+    word-break: break-word;
+  }
+  .mde-preview pre > code {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+}
+</style><style source-path="C:\Users\flluu\Downloads\Inkdrop-demo-5.4.1-Windows\resources\app.asar\node_modules\import-markdown\styles\select-book-dialog.less" priority="0">.ui.modal.dialog-frame.import-markdown-select-notebook-dialog {
+  min-width: 600px;
+  width: 50vw !important;
+  min-height: 50vh;
+}
+.ui.modal.dialog-frame.import-markdown-select-notebook-dialog .actions {
+  text-align: left;
+}
+</style><style source-path="C:\Users\flluu\Downloads\Inkdrop-demo-5.4.1-Windows\resources\app.asar\node_modules\import-html\styles\select-book-dialog.less" priority="0">.ui.modal.dialog-frame.import-html-select-notebook-dialog {
+  min-width: 600px;
+  width: 50vw !important;
+  min-height: 50vh;
+}
+.ui.modal.dialog-frame.import-html-select-notebook-dialog .actions {
+  text-align: left;
+}
+</style><style source-path="C:\Users\flluu\Downloads\Inkdrop-demo-5.4.1-Windows\resources\app.asar\node_modules\github-preview\styles\github-markdown.css" context="inkdrop-preview" priority="1">@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+.mde-preview {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+.mde-preview:before {
+  display: table;
+  content: "";
+}
+.mde-preview:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.mde-preview a {
+  background-color: transparent;
+}
+.mde-preview a:active,
+.mde-preview a:hover {
+  outline: 0;
+}
+.mde-preview strong {
+  font-weight: bold;
+  color: black;
+}
+.mde-preview em {
+  color: black;
+}
+.mde-preview h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.mde-preview img {
+  border: 0;
+}
+.mde-preview hr {
+  box-sizing: content-box;
+  height: 0;
+}
+.mde-preview pre {
+  overflow: auto;
+}
+.mde-preview code,
+.mde-preview kbd,
+.mde-preview pre {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-size: 1em;
+}
+.mde-preview input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.mde-preview html input[disabled] {
+  cursor: default;
+}
+.mde-preview input {
+  line-height: normal;
+}
+.mde-preview input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.mde-preview table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.mde-preview td,
+.mde-preview th {
+  padding: 0;
+}
+.mde-preview * {
+  box-sizing: border-box;
+}
+.mde-preview input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.mde-preview a {
+  color: #4078c0;
+  text-decoration: none;
+}
+.mde-preview a:hover,
+.mde-preview a:active {
+  text-decoration: underline;
+}
+.mde-preview hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+.mde-preview hr:before {
+  display: table;
+  content: "";
+}
+.mde-preview hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.mde-preview h1,
+.mde-preview h2,
+.mde-preview h3,
+.mde-preview h4,
+.mde-preview h5,
+.mde-preview h6 {
+  margin-top: 0;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+.mde-preview h1 {
+  font-size: 30px;
+}
+.mde-preview h2 {
+  font-size: 21px;
+}
+.mde-preview h3 {
+  font-size: 16px;
+}
+.mde-preview h4 {
+  font-size: 14px;
+}
+.mde-preview h5 {
+  font-size: 12px;
+}
+.mde-preview h6 {
+  font-size: 11px;
+}
+.mde-preview blockquote {
+  margin: 0;
+}
+.mde-preview ul,
+.mde-preview ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.mde-preview ol ol,
+.mde-preview ul ol {
+  list-style-type: lower-roman;
+}
+.mde-preview ul ul ol,
+.mde-preview ul ol ol,
+.mde-preview ol ul ol,
+.mde-preview ol ol ol {
+  list-style-type: lower-alpha;
+}
+.mde-preview dd {
+  margin-left: 0;
+}
+.mde-preview code {
+  font-size: 12px;
+}
+.mde-preview pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.mde-preview .select::-ms-expand {
+  opacity: 0;
+}
+.mde-preview .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mde-preview .octicon-link:before {
+  content: '\f05c';
+}
+.mde-preview .mde-preview > *:first-child {
+  margin-top: 0 !important;
+}
+.mde-preview .mde-preview > *:last-child {
+  margin-bottom: 0 !important;
+}
+.mde-preview a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+.mde-preview .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+.mde-preview .anchor:focus {
+  outline: none;
+}
+.mde-preview h1 .octicon-link,
+.mde-preview h2 .octicon-link,
+.mde-preview h3 .octicon-link,
+.mde-preview h4 .octicon-link,
+.mde-preview h5 .octicon-link,
+.mde-preview h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+.mde-preview h1:hover .anchor,
+.mde-preview h2:hover .anchor,
+.mde-preview h3:hover .anchor,
+.mde-preview h4:hover .anchor,
+.mde-preview h5:hover .anchor,
+.mde-preview h6:hover .anchor {
+  text-decoration: none;
+}
+.mde-preview h1:hover .anchor .octicon-link,
+.mde-preview h2:hover .anchor .octicon-link,
+.mde-preview h3:hover .anchor .octicon-link,
+.mde-preview h4:hover .anchor .octicon-link,
+.mde-preview h5:hover .anchor .octicon-link,
+.mde-preview h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+.mde-preview h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+.mde-preview h1 .anchor {
+  line-height: 1;
+}
+.mde-preview h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+.mde-preview h2 .anchor {
+  line-height: 1;
+}
+.mde-preview h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+.mde-preview h3 .anchor {
+  line-height: 1.2;
+}
+.mde-preview h4 {
+  font-size: 1.25em;
+}
+.mde-preview h4 .anchor {
+  line-height: 1.2;
+}
+.mde-preview h5 {
+  font-size: 1em;
+}
+.mde-preview h5 .anchor {
+  line-height: 1.1;
+}
+.mde-preview h6 {
+  font-size: 1em;
+  color: #777;
+}
+.mde-preview h6 .anchor {
+  line-height: 1.1;
+}
+.mde-preview p,
+.mde-preview blockquote,
+.mde-preview ul,
+.mde-preview ol,
+.mde-preview dl,
+.mde-preview table,
+.mde-preview pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.mde-preview hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+.mde-preview ul,
+.mde-preview ol {
+  padding-left: 2em;
+}
+.mde-preview ul ul,
+.mde-preview ul ol,
+.mde-preview ol ol,
+.mde-preview ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.mde-preview li > p {
+  margin: 0;
+}
+.mde-preview dl {
+  padding: 0;
+}
+.mde-preview dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+.mde-preview dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+.mde-preview blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+.mde-preview blockquote > :first-child {
+  margin-top: 0;
+}
+.mde-preview blockquote > :last-child {
+  margin-bottom: 0;
+}
+.mde-preview table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: keep-all;
+}
+.mde-preview table th {
+  font-weight: bold;
+}
+.mde-preview table th,
+.mde-preview table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+.mde-preview table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+.mde-preview table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.mde-preview img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+.mde-preview code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+.mde-preview code:before,
+.mde-preview code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+.mde-preview pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+.mde-preview pre {
+  padding: 16px;
+  overflow: auto;
+  word-wrap: normal;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+.mde-preview pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+.mde-preview pre code:before,
+.mde-preview pre code:after {
+  content: normal;
+}
+.mde-preview kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+.mde-preview .cm-header {
+  color: blue;
+}
+.mde-preview .cm-quote {
+  color: #090;
+  font-style: italic;
+}
+.mde-preview .cm-negative {
+  color: #d44;
+}
+.mde-preview .cm-positive {
+  color: #292;
+}
+.mde-preview .cm-header,
+.mde-preview .cm-strong {
+  font-weight: bold;
+}
+.mde-preview .cm-em {
+  font-style: italic;
+}
+.mde-preview .cm-link {
+  text-decoration: underline;
+}
+.mde-preview .cm-strikethrough {
+  text-decoration: line-through;
+}
+.mde-preview .cm-keyword {
+  color: #333;
+  font-weight: bold;
+}
+.mde-preview .cm-atom {
+  color: #219;
+}
+.mde-preview .cm-number {
+  color: #164;
+}
+.mde-preview .cm-def {
+  color: #00f;
+}
+.mde-preview .cm-property {
+  color: #00c;
+}
+.mde-preview .cm-operator {
+  color: #708;
+}
+.mde-preview .cm-variable-2 {
+  color: #05a;
+}
+.mde-preview .cm-variable-3,
+.mde-preview .cm-s-default .cm-type {
+  color: #085;
+}
+.mde-preview .cm-comment {
+  color: #a50;
+  font-style: italic;
+}
+.mde-preview .cm-string {
+  color: #a11;
+}
+.mde-preview .cm-string-2 {
+  color: #f50;
+}
+.mde-preview .cm-meta {
+  color: #555;
+}
+.mde-preview .cm-qualifier {
+  color: #555;
+}
+.mde-preview .cm-builtin {
+  color: #30a;
+}
+.mde-preview .cm-bracket {
+  color: #997;
+}
+.mde-preview .cm-tag {
+  color: #170;
+}
+.mde-preview .cm-attribute {
+  color: #00c;
+}
+.mde-preview .cm-hr {
+  color: #999;
+}
+.mde-preview .cm-link {
+  color: #00c;
+}
+.mde-preview .cm-error {
+  color: #f00;
+}
+.mde-preview kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+.mde-preview .task-list-item {
+  list-style-type: none;
+}
+.mde-preview .task-list-item + .task-list-item {
+  margin-top: 0px;
+}
+.mde-preview .task-list-item input {
+  /* margin: 0 0.35em 0.25em -1.6em; */
+  vertical-align: middle;
+}
+.mde-preview :checked + .radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+@media print {
+  .mde-preview table {
+    overflow: hidden;
+    word-break: break-word;
+  }
+  .mde-preview pre > code {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+}
+</style><style source-path="C:\Users\flluu\Downloads\Inkdrop-demo-5.4.1-Windows\resources\app.asar\node_modules\github-preview\styles\github-markdown-dark.css" context="inkdrop-preview" priority="1">body[class*="dark-ui"] .mde-preview {
+  color: rgba(255, 255, 255, 0.7);
+}
+body[class*="dark-ui"] .mde-preview a {
+  background-color: transparent;
+}
+body[class*="dark-ui"] .mde-preview img {
+  border: 0;
+}
+body[class*="dark-ui"] .mde-preview input {
+  color: inherit;
+}
+body[class*="dark-ui"] .mde-preview a {
+  color: #6987AF;
+}
+body[class*="dark-ui"] .mde-preview strong,
+body[class*="dark-ui"] .mde-preview em {
+  color: white;
+}
+body[class*="dark-ui"] .mde-preview h1,
+body[class*="dark-ui"] .mde-preview h2,
+body[class*="dark-ui"] .mde-preview h3,
+body[class*="dark-ui"] .mde-preview h4,
+body[class*="dark-ui"] .mde-preview h5,
+body[class*="dark-ui"] .mde-preview h6 {
+  color: rgba(255, 255, 255, 0.875);
+}
+body[class*="dark-ui"] .mde-preview h6 {
+  color: rgba(255, 255, 255, 0.625);
+}
+body[class*="dark-ui"] .mde-preview h1,
+body[class*="dark-ui"] .mde-preview h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+body[class*="dark-ui"] .mde-preview hr {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+body[class*="dark-ui"] .mde-preview blockquote {
+  color: rgba(255, 255, 255, 0.4);
+  border-left: 4px solid rgba(255, 255, 255, 0.1);
+}
+body[class*="dark-ui"] .mde-preview table th {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body[class*="dark-ui"] .mde-preview table th,
+body[class*="dark-ui"] .mde-preview table td {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+body[class*="dark-ui"] .mde-preview table tr {
+  background-color: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+body[class*="dark-ui"] .mde-preview table tr:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+body[class*="dark-ui"] .mde-preview img {
+  background-color: transparent;
+}
+body[class*="dark-ui"] .mde-preview .highlight pre,
+body[class*="dark-ui"] .mde-preview pre {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+body[class*="dark-ui"] .mde-preview .cm-header {
+  color: #ffcc66;
+}
+body[class*="dark-ui"] .mde-preview .cm-quote {
+  color: #969896;
+  font-style: italic;
+}
+body[class*="dark-ui"] .mde-preview .cm-negative {
+  color: #d44;
+}
+body[class*="dark-ui"] .mde-preview .cm-positive {
+  color: #292;
+}
+body[class*="dark-ui"] .mde-preview .cm-header,
+body[class*="dark-ui"] .mde-preview .cm-strong {
+  font-weight: bold;
+}
+body[class*="dark-ui"] .mde-preview .cm-em {
+  font-style: italic;
+}
+body[class*="dark-ui"] .mde-preview .cm-link {
+  text-decoration: underline;
+}
+body[class*="dark-ui"] .mde-preview .cm-strikethrough {
+  text-decoration: line-through;
+}
+body[class*="dark-ui"] .mde-preview .cm-keyword {
+  color: #cc99cc;
+  font-weight: normal;
+}
+body[class*="dark-ui"] .mde-preview .cm-atom {
+  color: #8abeb7;
+}
+body[class*="dark-ui"] .mde-preview .cm-number {
+  color: #f99157;
+}
+body[class*="dark-ui"] .mde-preview .cm-def {
+  color: #b5bd68;
+}
+body[class*="dark-ui"] .mde-preview .cm-property {
+  color: #b5bd68;
+}
+body[class*="dark-ui"] .mde-preview .cm-operator {
+  color: #cc99cc;
+}
+body[class*="dark-ui"] .mde-preview .cm-variable-2 {
+  color: #4A664A;
+}
+body[class*="dark-ui"] .mde-preview .cm-variable-3,
+body[class*="dark-ui"] .mde-preview .cm-type {
+  color: rgba(255, 255, 255, 0.8);
+}
+body[class*="dark-ui"] .mde-preview .cm-comment {
+  color: #969896;
+  font-style: italic;
+}
+body[class*="dark-ui"] .mde-preview .cm-string {
+  color: #8abeb7;
+}
+body[class*="dark-ui"] .mde-preview .cm-string-2 {
+  color: #8abeb7;
+}
+body[class*="dark-ui"] .mde-preview .cm-meta {
+  color: #f99157;
+}
+body[class*="dark-ui"] .mde-preview .cm-qualifier {
+  color: #555;
+}
+body[class*="dark-ui"] .mde-preview .cm-builtin {
+  color: #8abeb7;
+}
+body[class*="dark-ui"] .mde-preview .cm-bracket {
+  color: #f99157;
+}
+body[class*="dark-ui"] .mde-preview .cm-tag {
+  color: #a54543;
+}
+body[class*="dark-ui"] .mde-preview .cm-attribute {
+  color: #fda331;
+}
+body[class*="dark-ui"] .mde-preview .cm-hr {
+  color: #999;
+}
+body[class*="dark-ui"] .mde-preview .cm-link {
+  color: #f99157;
+}
+body[class*="dark-ui"] .mde-preview .cm-error {
+  color: #f00;
+}
+</style>
+  </head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <button onclick="topFunction()" id="scrollButton" >Top</button>
+    <div><h1 data-line="1" data-line-end="1">CMSC131 Final Exam Study Guide </h1>
+      <div class="dropdownContent">
+        <button id="dropClick" onclick="dropdownclick()" title="click to toggle"><h4>Contents: (Click to close)</h4></button>
+        <div id="dropdown">
+        <a href=#variableTypes>Variable Types</a>
+        <a href=#javaOperators>Java/Assignment Operators</a>
+        <a href=#shortCircuiting>Shortcircuiting</a><br>
+        <a href=#scannerClass>Scanner Class</a>
+        <a href=#systemPrint>System.out.println</a><br>
+        <a href=#escape>Escape Sequence</a>
+        <a href=#conditional>Conditional Statements</a>
+        <a href=#blocksScoping>Blocks/Scoping</a><br>
+        <a href=#constants>Constants</a><br>
+        <a href=#loops>Loops</a><br>
+        <a href=#string>String class & methods</a>
+        <a href=#static>Static and Nonstatic</a>
+        <a href=#constructor>Constructors</a><br>
+        <a href=#override>Override Methods</a><br>
+        <a href=#switch>Switch Statement</a>
+        <a href=#stringBuffer>StringBuffer</a><br>
+        <a href=#arrays>Arrays</a><br>
+        <a href=#ternary>Ternary Operator</a><br>
+        <a href=#exception>Exception</a>
+        <a href=#privacy>Privacy Leaks</a><br>
+        <a href=#copying>Copy (Ref, Shallow, Deep)</a>
+        <a href=#abstraction>Abstraction</a><br>
+        <a href=#encapsulation>Encapsulations</a><br>
+        <a href=#interface>Interfaces</a><br>
+        <a href=#break>break and continue</a>
+        <a href=#wrapper>Wrappers</a><br>
+        <a href=#stacks>Stacks</a><br>
+        <a href=#arrayList>arrayList</a><br>
+        <a href=#comparable>Comparable Interface</a><br>
+        <a href=#polymorphism>Polymorphism</a><br>
+        <a href=#overloading>Overloading</a><br>
+        <a href=#iterator>Iterator</a><br>
+        <a href=#recursion>Recursion</a>
+        <a href=#inheritance>Inheritance</a><br>
+        <a href=#terms>Important Terms</a>
+        </div>
+      </div>
+  <body class="mde-preview">
+
+<h4 data-line="3" data-line-end="3">pretext:</h4>
+<p data-line="4" data-line-end="5">this is meant to serve as an outline to guide your studying for the final of this class, if you have any questions, corrections, etc,. you can email me: david0 [at] umd [dot] edu. I wouldn't recommend only using this, here are <a href="https://docs.google.com/document/d/1MKu24JzMHtXUzFOfHOChSSGjuiipTcmUKuKEVYG3A3Y/edit?usp=sharing" data-line="4" data-line-end="4">claire's exam 2 and 3 notes</a>.
+Some (like two or three) of the topics are omitted b/c of their simplicity (expressions, string operator). Official exam coverage page from UMD <a href="http://www.cs.umd.edu/class/spring2023/cmsc131/exams/final/">here</a>.</p>
+<h4 data-line="7" data-line-end="7">by: david and claire 👍</h4>
+<h1 data-line="8" data-line-end="8">Object Oriented Terminology</h1>
+<h3 data-line="9" data-line-end="9">See Abstraction, Polymorphism, Encapsulation, and Inheritance</h3>
+<h4 data-line="11" data-line-end="11">Psuedocode</h4>
+<p data-line="12" data-line-end="12"> code written in a non-programming language which will describe the algorithm of the code and the "thinking" process of the code, like what it will look for, what it will store, the point of it is that it can be implemented across different languages.</p>
+<a id="variableTypes"></a><h1 data-line="14" data-line-end="14">Java Variables and Types</h1>
+<h4 data-line="15" data-line-end="15">Primitive Types:</h4>
+<ol data-line="16" data-line-end="23">
+<li data-line="16" data-line-end="16">byte</li>
+<li data-line="17" data-line-end="17">short</li>
+<li data-line="18" data-line-end="18">int</li>
+<li data-line="19" data-line-end="19">long</li>
+<li data-line="20" data-line-end="20">float</li>
+<li data-line="21" data-line-end="21">double</li>
+<li data-line="22" data-line-end="22">boolean</li>
+<li data-line="23" data-line-end="23">char</li>
+</ol>
+<p data-line="25" data-line-end="25"><strong data-line="25" data-line-end="25">What does it mean to be primitive?</strong></p>
+<p data-line="27" data-line-end="27">If you were to write code like <code>int num = 1</code>, your <code>num</code> variable would be assigned a specific size (32 bits) and can only hold numbers which fit in that size, secondly the data inside of the <code>num</code> variable in memory would represent 1, there is no pointer or place in memory where it points to.</p>
+<h4 data-line="29" data-line-end="29">Reference Types (Non-Primitive):</h4>
+<p data-line="30" data-line-end="30"><em data-line="30" data-line-end="30">there is no fixed number of reference types, you can have an infinite amount so these are some examples of some we've encountered in this class</em></p>
+<ul data-line="32" data-line-end="35">
+<li data-line="32" data-line-end="32">String</li>
+<li data-line="33" data-line-end="33">Scanner</li>
+<li data-line="34" data-line-end="34">ArrayList</li>
+<li data-line="35" data-line-end="35">Object</li>
+</ul>
+<p data-line="37" data-line-end="37"><strong data-line="37" data-line-end="37">What's the difference between Reference vs Primitive Types?</strong></p>
+<p data-line="39" data-line-end="39">Assume we have some Class <code>Student</code> which represents a Student. If I were to say <code>Student david = new Student();</code> that tells Java "I want to allocate space in memory for <code>david</code>, and I want it to <em data-line="39" data-line-end="39">point</em> to a <em data-line="39" data-line-end="39">new</em> <code>Student</code> Object." Reference types are simply variables which hold a <strong data-line="39" data-line-end="39">reference</strong> to something, the type is specified so I can't make my <code>Student david</code> point to a <code>new String</code> since that would be a type mismatch.</p>
+<p data-line="41" data-line-end="41">However, you can point a reference to something which inherits the type on the left, if I had a Class <code>UndergradStudent</code> which inherits/extends <code>Student</code> I will be able to write code such that <code>Student david = new UndergradStudent();</code>. The reason why is because every undergrad is a student, but not every student is an undergrad.</p>
+<p data-line="43" data-line-end="43"><strong data-line="43" data-line-end="43">If the above explanation confuses you, see Inheritance</strong></p>
+<a id="javaOperators"></a><h1 data-line="45" data-line-end="45">Java Numeric/String/Logical Operators</h1>
+<h4 data-line="47" data-line-end="47">Numeric Operators</h4>
+
+
+
+
+
+
+<table data-line="49" data-line-end="55"><thead data-line="49" data-line-end="49"><tr data-line="49" data-line-end="49"><th data-line="49" data-line-end="49" style="text-align: center;">Operator</th><th data-line="49" data-line-end="49" style="text-align: center;">Function</th></tr></thead><tbody data-line="51" data-line-end="55"><tr data-line="51" data-line-end="51"><td data-line="51" data-line-end="51" style="text-align: center;"><code>+</code></td><td data-line="51" data-line-end="51" style="text-align: center;">Adds</td></tr><tr data-line="52" data-line-end="52"><td data-line="52" data-line-end="52" style="text-align: center;"><code>-</code></td><td data-line="52" data-line-end="52" style="text-align: center;">Subtracts</td></tr><tr data-line="53" data-line-end="53"><td data-line="53" data-line-end="53" style="text-align: center;"><code>/</code></td><td data-line="53" data-line-end="53" style="text-align: center;">Divides</td></tr><tr data-line="54" data-line-end="54"><td data-line="54" data-line-end="54" style="text-align: center;"><code>*</code></td><td data-line="54" data-line-end="54" style="text-align: center;">Multiplies</td></tr><tr data-line="55" data-line-end="55"><td data-line="55" data-line-end="55" style="text-align: center;"><code>%</code></td><td data-line="55" data-line-end="55" style="text-align: center;">Modulus, remainder</td></tr></tbody></table>
+<p data-line="57" data-line-end="57"><em data-line="57" data-line-end="57">Division truncates (gets rid of) the decimal if both operands are integers</em></p>
+<h4 data-line="59" data-line-end="59">String Operators</h4>
+<p data-line="61" data-line-end="61"><code>+</code> - concatenates two strings</p>
+<h4 data-line="63" data-line-end="63">Logical Operators</h4>
+<p data-line="65" data-line-end="65"><code>&amp;&amp;</code> - AND, both left and right must be true to return true</p>
+<p data-line="68" data-line-end="68"><code>||</code> - OR, either left or right can be true to return true</p>
+<p data-line="70" data-line-end="70"><code>!</code> - NOT, flips true to false, and false to true</p>
+<h1 data-line="71" data-line-end="71">Assignment Operators</h1>
+
+
+
+
+
+
+<table data-line="72" data-line-end="79"><thead data-line="72" data-line-end="72"><tr data-line="72" data-line-end="72"><th data-line="72" data-line-end="72" style="text-align: center;">Operator</th><th data-line="72" data-line-end="72" style="text-align: center;">Function</th></tr></thead><tbody data-line="74" data-line-end="79"><tr data-line="74" data-line-end="74"><td data-line="74" data-line-end="74" style="text-align: center;"><code>=</code></td><td data-line="74" data-line-end="74" style="text-align: center;">Sets the value of something</td></tr><tr data-line="75" data-line-end="75"><td data-line="75" data-line-end="75" style="text-align: center;"><code>+=</code></td><td data-line="75" data-line-end="75" style="text-align: center;">Adds the value to the current value</td></tr><tr data-line="76" data-line-end="76"><td data-line="76" data-line-end="76" style="text-align: center;"><code>-=</code></td><td data-line="76" data-line-end="76" style="text-align: center;">Subtracts the value from the current value</td></tr><tr data-line="77" data-line-end="77"><td data-line="77" data-line-end="77" style="text-align: center;"><code>*=</code></td><td data-line="77" data-line-end="77" style="text-align: center;">Multiplies the value from the current value</td></tr><tr data-line="78" data-line-end="78"><td data-line="78" data-line-end="78" style="text-align: center;"><code>/=</code></td><td data-line="78" data-line-end="78" style="text-align: center;">Divides the value from the current value</td></tr><tr data-line="79" data-line-end="79"><td data-line="79" data-line-end="79" style="text-align: center;"><code>%=</code></td><td data-line="79" data-line-end="79" style="text-align: center;">Finds the modulus of the current value</td></tr></tbody></table>
+<a id="shortCircuiting"></a><h1 data-line="81" data-line-end="81">Short Circuiting</h1>
+<p data-line="83" data-line-end="83">The idea that Java doesn't need to check something has already been fulfilled.</p>
+<p data-line="86" data-line-end="86"><code>true || false</code> stops checking after the first true, because with the <code>OR</code> operator, you know that if the first operand is true, you don't even need to check the second one to know if the overall will be true</p>
+<p data-line="88" data-line-end="88">This works with <code>AND</code> too but like this, <code>false &amp;&amp; true</code> will not check the right hand operand since it already knows after the <code>false</code> that no matter what is in the right operand is, the <code>AND</code> will evaluate to false.</p>
+<p data-line="90" data-line-end="90">This is why if you have code such that:</p>
+<pre data-line="91" data-line-end="97"><code class="inline cm-s-default"><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">x</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">2</span><span class="">;</span><span class="">
+</span><span class="cm-keyword">if</span><span class="">(</span><span class="cm-atom">true</span><span class=""> </span><span class="cm-operator">||</span><span class=""> </span><span class="cm-variable">x</span><span class="cm-operator">++</span><span class=""> </span><span class="cm-operator">&gt;</span><span class=""> </span><span class="cm-number">5</span><span class="">){</span><span class="">
+</span><span class="">    ...</span><span class="">
+</span><span class="">}  </span><span class="">
+</span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">x</span><span class="">);</span><span class="">
+</span></code></pre>
+<p data-line="98" data-line-end="98">outputs 2, and never 3, even if the <code>x++</code> is a <code>++x</code></p>
+<a id="scannerClass"></a><h1 data-line="99" data-line-end="99">Scanner Class</h1>
+<p data-line="100" data-line-end="100">Import it using <code>import java.util.Scanner</code></p>
+<p data-line="102" data-line-end="102">This is how we get user input through the console</p>
+<p data-line="104" data-line-end="104"><strong data-line="104" data-line-end="104">ex:</strong></p>
+<pre data-line="105" data-line-end="112"><code class="inline cm-s-default"><span class="cm-comment">//assume main method and imported</span><span class="">
+
+</span><span class="cm-variable">Scanner</span><span class=""> </span><span class="cm-variable">scan</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">Scanner</span><span class="">();</span><span class="">
+
+</span><span class="cm-variable">scan</span><span class="">.</span><span class="cm-variable">nextInt</span><span class="">();</span><span class="">
+</span><span class="cm-variable">scan</span><span class="">.</span><span class="cm-variable">next</span><span class="">();</span><span class="">
+</span></code></pre>
+<p data-line="114" data-line-end="114"><code>nextInt()</code> - returns the next integer inputted from the user</p>
+<p data-line="116" data-line-end="116"><code>next()</code> - returns the next "String" separated by space or new line characters.</p>
+<a id="systemPrint"></a><h1 data-line="118" data-line-end="118">System.out.println() / System.out.print()</h1>
+<p data-line="119" data-line-end="119">Standard print to console methods, we don't need to concern ourselves with how it works.</p>
+<p data-line="121" data-line-end="121"><code>println()</code> - prints and then adds a new line to the end</p>
+<p data-line="123" data-line-end="123"><code>print()</code> - simply prints, no new line</p>
+<a id="escape"></a><h1 data-line="125" data-line-end="125">Escape Sequence</h1>
+<h4 data-line="127" data-line-end="127">used in Strings to represent certain special characters</h4>
+
+
+
+
+
+<table data-line="128" data-line-end="134"><thead data-line="128" data-line-end="128"><tr data-line="128" data-line-end="128"><th data-line="128" data-line-end="128" style="text-align: center;">character</th><th data-line="128" data-line-end="128" style="text-align: center;">function</th></tr></thead><tbody data-line="130" data-line-end="134"><tr data-line="130" data-line-end="130"><td data-line="130" data-line-end="130" style="text-align: center;"><code>\n</code></td><td data-line="130" data-line-end="130" style="text-align: center;">new line</td></tr><tr data-line="131" data-line-end="131"><td data-line="131" data-line-end="131" style="text-align: center;"><code>\t</code></td><td data-line="131" data-line-end="131" style="text-align: center;">tab</td></tr><tr data-line="132" data-line-end="132"><td data-line="132" data-line-end="132" style="text-align: center;"><code>\\</code></td><td data-line="132" data-line-end="132" style="text-align: center;">\ </td></tr><tr data-line="133" data-line-end="133"><td data-line="133" data-line-end="133" style="text-align: center;"><code>\"</code></td><td data-line="133" data-line-end="133" style="text-align: center;">double quotes "</td></tr><tr data-line="134" data-line-end="134"><td data-line="134" data-line-end="134" style="text-align: center;"><code>\'</code></td><td data-line="134" data-line-end="134" style="text-align: center;">single quote '</td></tr></tbody></table>
+<a id="conditional"></a><h1 data-line="136" data-line-end="136">Conditional Statements</h1>
+<h4 data-line="137" data-line-end="137">logical conditions</h4>
+
+
+
+
+
+
+
+<table data-line="139" data-line-end="146"><thead data-line="139" data-line-end="139"><tr data-line="139" data-line-end="139"><th data-line="139" data-line-end="139" style="text-align: center;">symbol</th><th data-line="139" data-line-end="139" style="text-align: center;">meaning</th></tr></thead><tbody data-line="141" data-line-end="146"><tr data-line="141" data-line-end="141"><td data-line="141" data-line-end="141" style="text-align: center;"><code>&gt;</code></td><td data-line="141" data-line-end="141" style="text-align: center;">greater than</td></tr><tr data-line="142" data-line-end="142"><td data-line="142" data-line-end="142" style="text-align: center;"><code>&lt;</code></td><td data-line="142" data-line-end="142" style="text-align: center;">less than</td></tr><tr data-line="143" data-line-end="143"><td data-line="143" data-line-end="143" style="text-align: center;"><code>&gt;=</code></td><td data-line="143" data-line-end="143" style="text-align: center;">greater than or equal to</td></tr><tr data-line="144" data-line-end="144"><td data-line="144" data-line-end="144" style="text-align: center;"><code>&lt;=</code></td><td data-line="144" data-line-end="144" style="text-align: center;">less than or equal to</td></tr><tr data-line="145" data-line-end="145"><td data-line="145" data-line-end="145" style="text-align: center;"><code>==</code></td><td data-line="145" data-line-end="145" style="text-align: center;">equal to</td></tr><tr data-line="146" data-line-end="146"><td data-line="146" data-line-end="146" style="text-align: center;"><code>!=</code></td><td data-line="146" data-line-end="146" style="text-align: center;">not equal to</td></tr></tbody></table>
+<a id="blocksScoping"></a><h1 data-line="148" data-line-end="148">Blocks and Scoping</h1>
+<h4 data-line="149" data-line-end="149">Blocks</h4>
+<p data-line="150" data-line-end="150">A block is simply code written inbetween <code>{}</code> (a set of curly braces).</p>
+<p data-line="152" data-line-end="152"><strong data-line="152" data-line-end="152">ex:</strong></p>
+<pre data-line="154" data-line-end="165"><code class="inline cm-s-default"><span class="cm-keyword">public</span><span class=""> </span><span class="cm-keyword">static</span><span class=""> </span><span class="cm-type">void</span><span class=""> </span><span class="cm-def">main</span><span class="">(</span><span class="cm-type">String</span><span class="">[] </span><span class="cm-variable">args</span><span class="">) {</span><span class="">
+</span><span class="">        </span><span class="">
+</span><span class="">        </span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">x</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">10</span><span class="">;</span><span class="">
+</span><span class="">        </span><span class="">
+</span><span class="">        {</span><span class="">
+</span><span class="">            </span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">hidden</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">20</span><span class="">;</span><span class="">
+</span><span class="">        }</span><span class="">
+</span><span class="">        </span><span class="">
+</span><span class="">        </span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">division</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">hidden</span><span class=""> </span><span class="cm-operator">/</span><span class=""> </span><span class="cm-variable">x</span><span class="">;</span><span class="">
+</span><span class="">    }</span><span class="">
+</span></code></pre>
+<p data-line="167" data-line-end="167">In the example above, <code>hidden</code> is inside of a block, which is inside of the <code>main</code> (method) block.</p>
+<h4 data-line="169" data-line-end="169">Scoping</h4>
+<p data-line="171" data-line-end="171">Variables outside of your blocks cannot be seen or accessed. This is the reason why when you write a Class if you have private instance fields/variables you need getters and setters to access them. In the previous example, <code>hidden</code> is hidden from the rest of <code>main</code> since it's in a block.</p>
+<a id="constants"></a><h1 data-line="172" data-line-end="172">Constants</h1>
+<p data-line="173" data-line-end="173">Something is considered a constant if it has the <code>final</code> keyword in front of it. It means you cannot edit that variable. Methods, and Classes can also be final, meaning that they are unable to be modified, or overwritten. Sounds abstract but classes like String are Final, which makes them immutable.</p>
+<h4 data-line="174" data-line-end="174">Naming Conventions</h4>
+<ul data-line="176" data-line-end="177">
+<li data-line="176" data-line-end="176">ALL CAPS</li>
+<li data-line="177" data-line-end="177">UNDERSCORES_BETWEEN_WORDS</li>
+</ul>
+<a id="loops"></a><h1 data-line="179" data-line-end="179">Loops (whiles, do whiles, for loops, for-each (enhanced) loops)</h1>
+<h4 data-line="180" data-line-end="180">Pretest vs Post-test:</h4>
+<p data-line="182" data-line-end="182"><strong data-line="182" data-line-end="182">pretest</strong> means the condition is checked <em data-line="182" data-line-end="182">before</em> any iteration is done</p>
+<p data-line="184" data-line-end="184"><strong data-line="184" data-line-end="184">posttest</strong> means the condition is checked <em data-line="184" data-line-end="184">after</em> any iteration is done</p>
+<h4 data-line="186" data-line-end="186">while()</h4>
+<p data-line="188" data-line-end="188">while the condition inside is true, the loop will run, it is <em data-line="188" data-line-end="188">pre-test</em></p>
+<pre data-line="189" data-line-end="194"><code class="inline cm-s-default"><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="cm-keyword">while</span><span class="">(</span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">&lt;=</span><span class=""> </span><span class="cm-number">10</span><span class="">){</span><span class="">
+</span><span class=""> </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">i</span><span class="cm-operator">++</span><span class="">);</span><span class="">
+</span><span class="">}  </span><span class="">
+</span></code></pre>
+<p data-line="195" data-line-end="195">this will count to 10.</p>
+<h4 data-line="197" data-line-end="197">do while()</h4>
+<p data-line="199" data-line-end="199">similar to while however it is <em data-line="199" data-line-end="199">posttest</em>, so the do body/block will run at least once </p>
+<pre data-line="201" data-line-end="206"><code class="inline cm-s-default"><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="cm-keyword">do</span><span class="">{</span><span class="">
+</span><span class="">  </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">i</span><span class="">);</span><span class="">
+</span><span class="">}</span><span class="cm-keyword">while</span><span class="">(</span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">&gt;</span><span class=""> </span><span class="cm-number">1</span><span class="">);</span><span class="">
+</span></code></pre>
+<p data-line="207" data-line-end="207">the code will print out 0 and then realize that i &gt; 1 (0 &gt; 1) is false and stop there.</p>
+<h4 data-line="209" data-line-end="209">for()</h4>
+<p data-line="211" data-line-end="211">for loops are <em data-line="211" data-line-end="211">pretest</em> and are used when you want to run it for some number of times. (when the number of times you want it to run can be represented as some number).</p>
+<p data-line="213" data-line-end="213"><strong data-line="213" data-line-end="213">ex:</strong></p>
+<pre data-line="214" data-line-end="218"><code class="inline cm-s-default"><span class="cm-keyword">for</span><span class="">(</span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">0</span><span class="">; </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">&lt;</span><span class=""> </span><span class="cm-number">5</span><span class="">; </span><span class="cm-variable">i</span><span class="cm-operator">++</span><span class="">){</span><span class="">
+</span><span class="">  ...</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<p data-line="219" data-line-end="219"><code>int i = 0</code> is only executed once, when the for loop is called, and that's it</p>
+<p data-line="221" data-line-end="221"><code>i &lt; 5</code> is the condition for the for loop, so when <code>i == 5</code> the loop will stop</p>
+<p data-line="223" data-line-end="223"><code>i++</code> runs every iteration of the loop, and determines how the variables will be changed. </p>
+<p data-line="225" data-line-end="225"><em data-line="225" data-line-end="225">None of these "sections" of the for loop header have to be one thing, so we can have a more sophisticated for loop like this:</em></p>
+<pre data-line="227" data-line-end="231"><code class="inline cm-s-default"><span class="cm-keyword">for</span><span class="">(</span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">0</span><span class="">, </span><span class="cm-variable">j</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">5</span><span class="">; </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">&lt;</span><span class=""> </span><span class="cm-number">5</span><span class=""> </span><span class="cm-operator">||</span><span class=""> </span><span class="cm-variable">j</span><span class=""> </span><span class="cm-operator">&gt;</span><span class=""> </span><span class="cm-number">0</span><span class="">; </span><span class="cm-variable">i</span><span class="cm-operator">++</span><span class="">, </span><span class="cm-variable">j</span><span class="cm-operator">--</span><span class="">) {</span><span class="">
+</span><span class="">            </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">+</span><span class=""> </span><span class="cm-string">" "</span><span class=""> </span><span class="cm-operator">+</span><span class=""> </span><span class="cm-variable">j</span><span class="">);</span><span class="">
+</span><span class="">        }</span><span class="">
+</span></code></pre>
+<h4 data-line="232" data-line-end="232">for each</h4>
+<p data-line="233" data-line-end="233">you can only use for each loops if the Object's Class implements <code>Iterable</code>, meaning it has an <code>Iterator</code> Object which can be retrieved. </p>
+<p data-line="235" data-line-end="235">For this class, we only touch on ArrayLists, which implement <code>Iterable</code></p>
+<p data-line="237" data-line-end="237"><strong data-line="237" data-line-end="237">ex:</strong></p>
+<pre data-line="238" data-line-end="256"><code class="inline cm-s-default"><span class="cm-keyword">public</span><span class=""> </span><span class="cm-keyword">static</span><span class=""> </span><span class="cm-type">void</span><span class=""> </span><span class="cm-def">main</span><span class="">(</span><span class="cm-type">String</span><span class="">[] </span><span class="cm-variable">args</span><span class="">) {</span><span class="">
+</span><span class="">        </span><span class="">
+</span><span class="">        </span><span class="cm-variable">ArrayList</span><span class="cm-operator">&lt;</span><span class="cm-type">Integer</span><span class="cm-operator">&gt;</span><span class=""> </span><span class="cm-variable">numList</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">ArrayList</span><span class="cm-operator">&lt;&gt;</span><span class="">();</span><span class="">
+</span><span class="">        </span><span class="">
+</span><span class="">        </span><span class="cm-variable">numList</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-number">1</span><span class="">);</span><span class="cm-variable">numList</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-number">2</span><span class="">);</span><span class="cm-variable">numList</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-number">3</span><span class="">);</span><span class="">
+</span><span class="">        </span><span class="cm-variable">numList</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-number">4</span><span class="">);</span><span class="cm-variable">numList</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-number">5</span><span class="">);</span><span class="cm-variable">numList</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-number">6</span><span class="">);</span><span class="">
+</span><span class="">        </span><span class="cm-variable">numList</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-number">7</span><span class="">);</span><span class="cm-variable">numList</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-number">8</span><span class="">);</span><span class="cm-variable">numList</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-number">9</span><span class="">);</span><span class="">
+</span><span class="">        </span><span class="">
+</span><span class="">        </span><span class="cm-keyword">for</span><span class="">(</span><span class="cm-type">Integer</span><span class=""> </span><span class="cm-variable">num</span><span class=""> : </span><span class="cm-variable">numList</span><span class="">) {</span><span class="">
+</span><span class="">            </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">num</span><span class="">);</span><span class="">
+</span><span class="">        }</span><span class="">
+</span><span class="">        </span><span class="">
+</span><span class="">        </span><span class="cm-variable">Iterator</span><span class="cm-operator">&lt;</span><span class="cm-type">Integer</span><span class="cm-operator">&gt;</span><span class=""> </span><span class="cm-variable">itr</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">numList</span><span class="">.</span><span class="cm-variable">iterator</span><span class="">();</span><span class="">
+</span><span class="">        </span><span class="cm-keyword">while</span><span class="">(</span><span class="cm-variable">itr</span><span class="">.</span><span class="cm-variable">hasNext</span><span class="">()) {</span><span class="">
+</span><span class="">            </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">itr</span><span class="">.</span><span class="cm-variable">next</span><span class="">());</span><span class="">
+</span><span class="">        }</span><span class="">
+</span><span class="">    }</span><span class="">
+</span></code></pre>
+<p data-line="258" data-line-end="258"><em data-line="258" data-line-end="258">Both the enhanced for loop and the while loop accomplish the same thing, however the for each loop is a lot easier to read and write.</em></p>
+<h5 data-line="260" data-line-end="260">explanation</h5>
+<p data-line="261" data-line-end="261"><code>Integer num</code> represents the element we are "retrieving", so if I had an <code>ArrayList</code> of <code>String</code> or <code>Student</code> it would be either one of those instead of <code>Integer num</code>.</p>
+<p data-line="263" data-line-end="263"><code>numList</code> is where the elements are being retrieved from.</p>
+<a id="string"></a><h1 data-line="264" data-line-end="264">String Class</h1>
+<ul data-line="265" data-line-end="268">
+<li data-line="265" data-line-end="265">immutable</li>
+<li data-line="266" data-line-end="266">represents words</li>
+<li data-line="267" data-line-end="267">Strings can be represented with the shorthand double quotes ("example").</li>
+<li data-line="268" data-line-end="268">Java attempts to optimize making Strings since they are immutable</li>
+</ul>
+<p data-line="270" data-line-end="270">ex:</p>
+<pre data-line="271" data-line-end="274"><code class="inline cm-s-default"><span class="cm-type">String</span><span class=""> </span><span class="cm-variable">name</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-string">"claire"</span><span class="">;</span><span class="">
+</span><span class="cm-type">String</span><span class=""> </span><span class="cm-variable">otherName</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-string">"claire"</span><span class="">;</span><span class="">
+</span></code></pre>
+<p data-line="275" data-line-end="275">java sees that the "claire" string already exists in the heap, and since String objects are immutable, there is no issue with having name and otherName point to the same address in memory. </p>
+<p data-line="277" data-line-end="277">If you want to guarantee that a new address in memory is allocated, use <code>new String();</code> </p>
+<h1 data-line="278" data-line-end="278">String Class Methods: toLowerCase, toUpperCase, length, charAt, substring, isEmpty</h1>
+
+
+
+
+
+
+
+<table data-line="280" data-line-end="288"><thead data-line="280" data-line-end="280"><tr data-line="280" data-line-end="280"><th data-line="280" data-line-end="280" style="text-align: center;">method</th><th data-line="280" data-line-end="280" style="text-align: center;">returns</th><th data-line="280" data-line-end="280" style="text-align: center;">purpose</th></tr></thead><tbody data-line="282" data-line-end="288"><tr data-line="282" data-line-end="282"><td data-line="282" data-line-end="282" style="text-align: center;"><code>String.toLowerCase()</code></td><td data-line="282" data-line-end="282" style="text-align: center;">String</td><td data-line="282" data-line-end="282" style="text-align: center;">the all lower case version of the String it is called upon</td></tr><tr data-line="283" data-line-end="283"><td data-line="283" data-line-end="283" style="text-align: center;"><code>String.toUpperCase()</code></td><td data-line="283" data-line-end="283" style="text-align: center;">String</td><td data-line="283" data-line-end="283" style="text-align: center;">the all upper case version of the String it is called upon</td></tr><tr data-line="284" data-line-end="284"><td data-line="284" data-line-end="284" style="text-align: center;"><code>String.length()</code></td><td data-line="284" data-line-end="284" style="text-align: center;">int</td><td data-line="284" data-line-end="284" style="text-align: center;">how many characters (including spaces) are in the String</td></tr><tr data-line="285" data-line-end="285"><td data-line="285" data-line-end="285" style="text-align: center;"><code>String.charAt(int index)</code></td><td data-line="285" data-line-end="285" style="text-align: center;">char</td><td data-line="285" data-line-end="285" style="text-align: center;">gets the character at the specified index in the String, 0-based indexing.</td></tr><tr data-line="286" data-line-end="286"><td data-line="286" data-line-end="286" style="text-align: center;"><code>String.subString(int start)</code></td><td data-line="286" data-line-end="286" style="text-align: center;">String</td><td data-line="286" data-line-end="286" style="text-align: center;">when it is just 1 int, it returns from that index <code>start</code> (inclusive) until the end of the String</td></tr><tr data-line="287" data-line-end="287"><td data-line="287" data-line-end="287" style="text-align: center;"><code>String.subString(int start, int end)</code></td><td data-line="287" data-line-end="287" style="text-align: center;">String</td><td data-line="287" data-line-end="287" style="text-align: center;">similar to one-parameter subString() but the char at index <code>end</code> is not included</td></tr><tr data-line="288" data-line-end="288"><td data-line="288" data-line-end="288" style="text-align: center;"><code>String.isEmpty()</code></td><td data-line="288" data-line-end="288" style="text-align: center;">boolean</td><td data-line="288" data-line-end="288" style="text-align: center;">returns true if <code>String.length()</code> is 0</td></tr></tbody></table>
+<a id="static"></a><h1 data-line="290" data-line-end="290">Static and Non-Static Methods</h1>
+<h4 data-line="291" data-line-end="291">Static Methods</h4>
+<ul data-line="292" data-line-end="294">
+<li data-line="292" data-line-end="292">has no "this" reference</li>
+<li data-line="293" data-line-end="293">is called on the Class name (can be called on instances, but you should avoid doing this) </li>
+<li data-line="294" data-line-end="294">Cannot access instance variables </li>
+</ul>
+<h4 data-line="296" data-line-end="296">Non-Static Methods</h4>
+<ul data-line="297" data-line-end="299">
+<li data-line="297" data-line-end="297">has a "this" reference</li>
+<li data-line="298" data-line-end="298">can only be invoked on instances of the class </li>
+<li data-line="299" data-line-end="299">can access instance variables</li>
+</ul>
+<a id="constructor"></a><h1 data-line="300" data-line-end="300">Constructors</h1>
+<h4 data-line="301" data-line-end="301">what is it?</h4>
+<p data-line="302" data-line-end="302">it's how an instance of a Class is constructed (no way), the <code>new</code> keyword is what tells Java to allocate memory for a new Object, and the constructor defines <em data-line="302" data-line-end="302">how</em> the object should be defined.</p>
+<h4 data-line="304" data-line-end="304">Default constructor</h4>
+<p data-line="305" data-line-end="305">This simply refers to having a <strong data-line="305" data-line-end="305">no argument constructor</strong>, but also refers to the <strong data-line="305" data-line-end="305">implicit constructor</strong> that is written when there is no constructors defined in the class. The implicit constructor will make <strong data-line="305" data-line-end="305">all reference types null and pritive types their default "empty" values.</strong></p>
+<p data-line="307" data-line-end="307"><em data-line="307" data-line-end="307">Note: the default constructor that our compiler provides goes away when you write ANY constructor</em></p>
+<h1 data-line="308" data-line-end="308">Using "this" for classes</h1>
+<p data-line="309" data-line-end="309">You can use <code>this.</code> prefix to refer to the current object which will call the method, you can use this in <strong data-line="309" data-line-end="309">non-static methods</strong> in order to access instance variables, however it is not required since methods of the Class can already access private fields, it's useful for when you have some method where the parameters have the same name as the instance fields.  </p>
+<p data-line="311" data-line-end="311"><strong data-line="311" data-line-end="311">ex:</strong></p>
+<pre data-line="312" data-line-end="318"><code class="inline cm-s-default"><span class="cm-comment">//assume String name instance variable</span><span class="">
+</span><span class="cm-keyword">public</span><span class=""> </span><span class="cm-type">void</span><span class=""> </span><span class="cm-def">setName</span><span class="">(</span><span class="cm-type">String</span><span class=""> </span><span class="cm-variable">name</span><span class="">){</span><span class="">
+</span><span class="">  </span><span class="cm-keyword">this</span><span class="">.</span><span class="cm-variable">name</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">name</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">//current Object's name field = name parameter</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<h1 data-line="319" data-line-end="319">Instance variables</h1>
+<p data-line="320" data-line-end="320">These are variables which belong to a <strong data-line="320" data-line-end="320">specific instance</strong> of the class, meaning each instance has their own <em data-line="320" data-line-end="320">unique version which belongs to them</em>. These are also called <strong data-line="320" data-line-end="320">instance fields</strong>.</p>
+<p data-line="322" data-line-end="322">Use this when you want all instances to have distinct variables.</p>
+<h1 data-line="323" data-line-end="323">Static variables</h1>
+<p data-line="324" data-line-end="324">Static variables are shared all throughout the instances of the class, so each instance has access to a static variable. It is not unique to instances, but it is unique to the class itself. </p>
+<p data-line="326" data-line-end="326">Use this when you want all instances to have some shared variable.</p>
+<h1 data-line="327" data-line-end="327">Get/Set methods</h1>
+<p data-line="328" data-line-end="328">These are methods which either <strong data-line="328" data-line-end="328">get</strong> <em data-line="328" data-line-end="328">(return)</em> a field or <strong data-line="328" data-line-end="328">set</strong> <em data-line="328" data-line-end="328">(mutate/modify)</em> a field. This is useful when we have <code>private</code> instance variables or we don't want classes outside of our class to <strong data-line="328" data-line-end="328">directly</strong> access instance fields. It is important to note that "getting" a reference type field will<em data-line="328" data-line-end="328"> return the reference to the field</em>, you need to worry about this if your field is mutable, because then you can change it outside of the class. </p>
+<a id="override"></a><h1 data-line="330" data-line-end="330">How to override the toString() method</h1>
+<pre data-line="332" data-line-end="337"><code class="inline cm-s-default"><span class="cm-meta">@Override</span><span class="">
+</span><span class="cm-keyword">public</span><span class=""> </span><span class="cm-type">String</span><span class=""> </span><span class="cm-def">toString</span><span class="">(){</span><span class="">
+</span><span class=""> </span><span class="cm-keyword">return</span><span class=""> ... </span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<p data-line="338" data-line-end="338">the <code>@Override</code> annotation is not necessary. <code>toString()</code> comes from the Object class, by default it will return a String representing its' address in memory. </p>
+<h1 data-line="339" data-line-end="339">How to override the equals(Object obj) method</h1>
+<pre data-line="340" data-line-end="357"><code class="inline cm-s-default"><span class="cm-meta">@Override</span><span class="">
+</span><span class="cm-keyword">public</span><span class=""> </span><span class="cm-type">boolean</span><span class=""> </span><span class="cm-def">equals</span><span class="">(</span><span class="cm-type">Object</span><span class=""> </span><span class="cm-variable">obj</span><span class="">){</span><span class="">
+</span><span class="">  </span><span class="cm-comment">//if the parameter has the same address in memory it has to be the same as "this", notice that its == not .equals()</span><span class="">
+</span><span class=""> </span><span class="cm-keyword">if</span><span class="">(</span><span class="cm-variable">obj</span><span class=""> </span><span class="cm-operator">==</span><span class=""> </span><span class="cm-keyword">this</span><span class="">)</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">return</span><span class=""> </span><span class="cm-atom">true</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">//if obj is null, it can't be this because this isn't null</span><span class="">
+</span><span class="">  </span><span class="cm-keyword">if</span><span class="">(</span><span class="cm-variable">obj</span><span class=""> </span><span class="cm-operator">==</span><span class=""> </span><span class="cm-atom">null</span><span class="">)</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">return</span><span class=""> </span><span class="cm-atom">false</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">//getClass() calls this.getClass() implicitly, if this and obj have different classes, then they cannot be compared</span><span class="">
+</span><span class="">  </span><span class="cm-keyword">if</span><span class="">(</span><span class="cm-variable">getClass</span><span class="">() </span><span class="cm-operator">!=</span><span class=""> </span><span class="cm-variable">obj</span><span class="">.</span><span class="cm-variable">getClass</span><span class="">())</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">return</span><span class=""> </span><span class="cm-atom">false</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="">
+</span><span class="">  </span><span class="cm-comment">//at this point we can safely cast the Object into the class of this</span><span class="">
+</span><span class="">  </span><span class="cm-variable">SomeClass</span><span class=""> </span><span class="cm-variable">someVarName</span><span class=""> </span><span class="cm-operator">=</span><span class=""> (</span><span class="cm-variable">SomeClass</span><span class="">) </span><span class="cm-variable">obj</span><span class="">;</span><span class="">
+</span><span class="">  </span><span class="cm-comment">// compare based on what you want to compare them on</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<a id="switch"></a><h1 data-line="358" data-line-end="358">Switch statement</h1>
+<p data-line="359" data-line-end="360">A switch statement is when you want a number of options depending on the input, this has the advantage of being easier to read and write than a ton of chained if-else statements.
+Only a select amount of types are able to be used in switch statements:</p>
+<ul data-line="361" data-line-end="364">
+<li data-line="361" data-line-end="361">char </li>
+<li data-line="362" data-line-end="362">byte</li>
+<li data-line="363" data-line-end="363">int</li>
+<li data-line="364" data-line-end="364">short</li>
+</ul>
+<p data-line="366" data-line-end="366"><em data-line="366" data-line-end="366">and their respective wrapper classes</em></p>
+<p data-line="368" data-line-end="368">The exception is made for the String class, which can be used in the switch statement.</p>
+<p data-line="370" data-line-end="370"><strong data-line="370" data-line-end="370">ex:</strong></p>
+<pre data-line="372" data-line-end="396"><code class="inline cm-s-default"><span class="cm-variable">Scanner</span><span class=""> </span><span class="cm-variable">scan</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">Scanner</span><span class="">(</span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">in</span><span class="">);</span><span class="">
+</span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">x</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">scan</span><span class="">.</span><span class="cm-variable">nextInt</span><span class="">();</span><span class="">
+
+</span><span class="cm-keyword">switch</span><span class=""> (</span><span class="cm-variable">x</span><span class="">) {</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">case</span><span class=""> </span><span class="cm-number">1</span><span class="">:</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">case</span><span class=""> </span><span class="cm-number">2</span><span class="">:</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">case</span><span class=""> </span><span class="cm-number">3</span><span class="">:</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">case</span><span class=""> </span><span class="cm-number">4</span><span class="">:</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">case</span><span class=""> </span><span class="cm-number">5</span><span class="">:</span><span class="">
+</span><span class="">        </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-string">"Too low!"</span><span class="">);</span><span class="">
+</span><span class="">        </span><span class="cm-keyword">break</span><span class="">;</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">case</span><span class=""> </span><span class="cm-number">6</span><span class="">:</span><span class="">
+</span><span class="">        </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-string">"Correct number"</span><span class="">);</span><span class="">
+</span><span class="">        </span><span class="cm-keyword">break</span><span class="">;</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">case</span><span class=""> </span><span class="cm-number">7</span><span class="">:</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">case</span><span class=""> </span><span class="cm-number">8</span><span class="">:</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">case</span><span class=""> </span><span class="cm-number">9</span><span class="">:</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">case</span><span class=""> </span><span class="cm-number">10</span><span class="">:</span><span class="">
+</span><span class="">        </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-string">"Too high!"</span><span class="">);</span><span class="">
+</span><span class="">        </span><span class="cm-keyword">break</span><span class="">;</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">default</span><span class="">:</span><span class="">
+</span><span class="">        </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-string">"out of range!"</span><span class="">);</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<p data-line="397" data-line-end="397">In the code above, if the user enters a number from 1 - 5 it will output that it is too low. If they put 6, it will print out correct number, if they put 7 - 10 it will be too high, if they guess anything else it will be considered out of the range.</p>
+<p data-line="399" data-line-end="399">Notice you can prevent code duplication by allowing the cases to "fall through" if they behave the same. Also, each case should have a break inside of it, otherwise it will attempt to run the cases under it. </p>
+<a id="stringBuffer"></a><h1 data-line="400" data-line-end="400">StringBuffer</h1>
+<p data-line="401" data-line-end="401">The <code>StringBuffer</code> class is a version of Strings which is mutable instead of immutable, this means that you are able to alter the value in memory and anything referencing it will see the changes.</p>
+<a id="arrays"></a><h1 data-line="402" data-line-end="402">One and Two Dimensional Arrays (of primitives and references)</h1>
+<p data-line="404" data-line-end="404">One-dimensional arrays allow you to store elements in one group. You can initialize one by following this form,</p>
+<pre data-line="406" data-line-end="408"><code class="inline cm-s-default"><span class="cm-variable">type</span><span class="">[] </span><span class="cm-variable">arrayName</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">type</span><span class="">[</span><span class="cm-variable">size</span><span class="">];</span><span class="">
+</span></code></pre>
+<p data-line="410" data-line-end="410">where <code>type</code> can be both primitives and reference types. The <code>[]</code> represents index, or subscript, so <code>arrayName[0]</code> would be the first element in such array.</p>
+<a id="ternary"></a><h1 data-line="412" data-line-end="412">Ternary Operator</h1>
+<p data-line="414" data-line-end="414">You want to use this on expressions which evaluate as true or false, it's essentially asking a question, if the expression evaluates to true, it will do the left hand of the operator, false will do the right.</p>
+<p data-line="416" data-line-end="416"><strong data-line="416" data-line-end="416">ex:</strong></p>
+<pre data-line="418" data-line-end="423"><code class="inline cm-s-default"><span class="cm-variable">Scanner</span><span class=""> </span><span class="cm-variable">scan</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">Scanner</span><span class="">(</span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">in</span><span class="">);</span><span class="">
+</span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">x</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">scan</span><span class="">.</span><span class="cm-variable">nextInt</span><span class="">();</span><span class="">
+
+</span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">print</span><span class="">(</span><span class="cm-variable">x</span><span class=""> </span><span class="cm-operator">==</span><span class=""> </span><span class="cm-number">10</span><span class=""> </span><span class="cm-operator">?</span><span class=""> </span><span class="cm-string">"correct number"</span><span class=""> : </span><span class="cm-string">"wrong number"</span><span class="">);</span><span class="">
+</span></code></pre>
+<p data-line="424" data-line-end="424">If the user inputs anything besides 10, it is considered a wrong number.</p>
+<p data-line="426" data-line-end="427">Ternary operators can be nested but you should avoid doing this as it reduces readability.
+They follow this format: <code>boolean ? if true : if false</code>.</p>
+<a id="exception"></a><h1 data-line="429" data-line-end="429">Exceptions</h1>
+<p data-line="431" data-line-end="431">Exceptions are when you want to account for something not happening the way it was expected. A simple example of an exception is with the <code>Scanner</code> class, if our <code>Scanner</code> is looking for <code>nextInt()</code> and the user inputs a String, it will throw an exception <code>java.util.InputMismatchException</code>.</p>
+<h4 data-line="433" data-line-end="433">try-catch-finally</h4>
+<p data-line="435" data-line-end="435">a <code>try</code> will isolate code where an exception can be thrown in order to <code>catch</code> it and handle the exception. Sounds very vague, however we can adapt this to the example from above.</p>
+<p data-line="437" data-line-end="437"><strong data-line="437" data-line-end="437">ex:</strong></p>
+<pre data-line="438" data-line-end="448"><code class="inline cm-s-default"><span class="cm-keyword">try</span><span class=""> {</span><span class="">
+</span><span class="">            </span><span class="cm-variable">Scanner</span><span class=""> </span><span class="cm-variable">scan</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">Scanner</span><span class="">(</span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">in</span><span class="">);</span><span class="">
+</span><span class="">            </span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">x</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">scan</span><span class="">.</span><span class="cm-variable">nextInt</span><span class="">();</span><span class="">
+</span><span class="">            </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">x</span><span class=""> </span><span class="cm-operator">==</span><span class=""> </span><span class="cm-number">10</span><span class=""> </span><span class="cm-operator">?</span><span class=""> </span><span class="cm-string">"correct number"</span><span class=""> : </span><span class="cm-string">"wrong number"</span><span class="">);</span><span class="">
+</span><span class="">}</span><span class="cm-keyword">catch</span><span class="">(</span><span class="cm-variable">InputMismatchException</span><span class=""> </span><span class="cm-variable">e</span><span class="">) {</span><span class="">
+</span><span class="">            </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">e</span><span class="">.</span><span class="cm-variable">getMessage</span><span class="">());</span><span class="">
+</span><span class="">}</span><span class="cm-keyword">finally</span><span class=""> {</span><span class="">
+</span><span class="">            </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-string">"This code will always run!"</span><span class="">);</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<p data-line="450" data-line-end="450">if the code in they <code>try</code> block were to throw an InputMismatchException we are able to handle it with the <code>catch</code> block. In the catch block above, we simply print out the message associated with the error, which is defined by java.lang and not us, so we don't need to worry about that. The code in the <code>finally</code> block will always run no matter what, even if an exception is thrown or not. </p>
+<a id="privacy"></a><h1 data-line="451" data-line-end="451">Privacy Leaks</h1>
+<p data-line="452" data-line-end="452">Privacy leaks usually occur when you return a reference to something which is mutable, which allows someone or some class to have access to a reference in memory which they shouldn't. This can be avoided by returning a <em data-line="452" data-line-end="452">deep copy</em>, where what you are returning is guaranteed to have its' own address in memory. </p>
+<p data-line="454" data-line-end="454"><strong data-line="454" data-line-end="454">ex:</strong></p>
+<pre data-line="455" data-line-end="465"><code class="inline cm-s-default"><span class="cm-keyword">public</span><span class=""> </span><span class="cm-keyword">static</span><span class=""> </span><span class="cm-type">void</span><span class=""> </span><span class="cm-def">main</span><span class="">(</span><span class="cm-type">String</span><span class="">[] </span><span class="cm-variable">args</span><span class="">) {</span><span class="">
+</span><span class="">        </span><span class="cm-type">StringBuffer</span><span class=""> </span><span class="cm-variable">strBffr</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">exampleMethod</span><span class="">();</span><span class="">
+</span><span class="">        </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">strBffr</span><span class="">.</span><span class="cm-variable">append</span><span class="">(</span><span class="cm-string">"\nAdded in the main method!"</span><span class="">));</span><span class="">
+</span><span class="">    }</span><span class="">
+</span><span class="">    </span><span class="">
+</span><span class="cm-keyword">public</span><span class=""> </span><span class="cm-keyword">static</span><span class=""> </span><span class="cm-type">StringBuffer</span><span class=""> </span><span class="cm-def">exampleMethod</span><span class="">() {</span><span class="">
+</span><span class="">        </span><span class="cm-type">StringBuffer</span><span class=""> </span><span class="cm-variable">test</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-type">StringBuffer</span><span class="">(</span><span class="cm-string">"Out of Scope!"</span><span class="">);</span><span class="">
+</span><span class="">        </span><span class="cm-keyword">return</span><span class=""> </span><span class="cm-variable">test</span><span class="">;</span><span class="">
+</span><span class="">    }</span><span class="">
+</span></code></pre>
+<p data-line="466" data-line-end="466">In the code above, you can see that the <code>test</code> StringBuffer is made inside of the method, so it should not be able to be accessed outside of that block, however we return the reference in memory from <code>test</code> to <code>strBffr</code>, which means if <code>test</code> was some instance variable it could be affected from outside the class in an undesirable manner.</p>
+<p data-line="468" data-line-end="468">In order to prevent this you should do this with StringBuffer.</p>
+<pre data-line="470" data-line-end="475"><code class="inline cm-s-default"><span class="cm-keyword">public</span><span class=""> </span><span class="cm-keyword">static</span><span class=""> </span><span class="cm-type">StringBuffer</span><span class=""> </span><span class="cm-def">exampleMethod</span><span class="">() {</span><span class="">
+</span><span class="">        </span><span class="cm-type">StringBuffer</span><span class=""> </span><span class="cm-variable">test</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-type">StringBuffer</span><span class="">(</span><span class="cm-string">"Out of Scope!"</span><span class="">);</span><span class="">
+</span><span class="">        </span><span class="cm-keyword">return</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-type">StringBuffer</span><span class="">(</span><span class="cm-variable">test</span><span class="">);</span><span class="">
+</span><span class="">    }</span><span class="">
+</span></code></pre>
+<a id="copying"></a><h1 data-line="476" data-line-end="476">Copying Objects: Reference, Shallow, Deep Copying</h1>
+<h4 data-line="477" data-line-end="477">Reference Copying</h4>
+<p data-line="478" data-line-end="479">When the copy is just of the reference itself, meaning it's the same Object address.
+<strong data-line="479" data-line-end="479">ex:</strong></p>
+<pre data-line="480" data-line-end="483"><code class="inline cm-s-default"><span class="cm-type">int</span><span class="">[] </span><span class="cm-variable">arr1</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-type">int</span><span class="">[] {</span><span class="cm-number">1</span><span class="">,</span><span class="cm-number">2</span><span class="">,</span><span class="cm-number">3</span><span class="">,</span><span class="cm-number">4</span><span class="">,</span><span class="cm-number">5</span><span class="">};</span><span class="">
+</span><span class="cm-type">int</span><span class="">[] </span><span class="cm-variable">arr2</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">arr1</span><span class="">;</span><span class="">
+</span></code></pre>
+<p data-line="485" data-line-end="485">They both reference the same address in memory, so it's more of an aliasing situation, and the changes will be seen by both variables.</p>
+<h4 data-line="487" data-line-end="487">Shallow Copying</h4>
+<p data-line="489" data-line-end="489">This is just when you only have seperation on the first layer, this works fine when you have an Object with immutables, or an array of primitives.</p>
+<p data-line="491" data-line-end="491"><strong data-line="491" data-line-end="491">ex:</strong> (this example is with 2d arrays, and is to demonstrate the shortcomings of shallow copies)</p>
+<pre data-line="492" data-line-end="495"><code class="inline cm-s-default"><span class="cm-type">String</span><span class="">[][] </span><span class="cm-variable">arr1</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-type">String</span><span class="">[][] {{</span><span class="cm-string">"1"</span><span class="">,</span><span class="cm-string">"2"</span><span class="">},{</span><span class="cm-string">"3"</span><span class="">,</span><span class="cm-string">"4"</span><span class="">}}</span><span class="">
+
+</span></code></pre>
+<h4 data-line="497" data-line-end="497">Deep Copying</h4>
+<a id="abstraction"></a><h1 data-line="500" data-line-end="500">Abstraction</h1>
+<h4 data-line="501" data-line-end="501">⚠️ 1 of the 4 pillars of Object Oriented Programming</h4>
+<p data-line="503" data-line-end="503">Abstraction is the idea that we do not need to understand how something works or that it is implemented, just that our input generates some output which we want.</p>
+<p data-line="505" data-line-end="506">Sounds abstract here's an example:
+<code>System.out.println();</code></p>
+<p data-line="508" data-line-end="508">We don't know how this method works in its' entirety but we do know that it does something we want it to (output to console).</p>
+<a id="encapsulation"></a><h1 data-line="509" data-line-end="509">Encapsulation</h1>
+<h4 data-line="510" data-line-end="510">⚠️ 1 of the 4 pillars of Object Oriented Programming</h4>
+<p data-line="512" data-line-end="512">Very related to abstraction, however the intent is different, with Encapsulation, the programmer doesn't want the user to know how the method/function works in order to protect the security of it. This is why we need getters and setters.</p>
+<p data-line="514" data-line-end="514"><a href="https://piazza.com/class/ld6hzc2587lx/post/804" data-line="514" data-line-end="514">Read more here, courtesy of Matthew</a>.</p>
+<a id="interface"></a><h1 data-line="515" data-line-end="515">Interfaces</h1>
+<p data-line="516" data-line-end="516">It is a type of abstract class where you have no definition of methods. You cannot instantiate an Interface, it is meant to "group" classes together where they all share a type. If you implement an interface into a class, you MUST satisfy the method headers.</p>
+<pre data-line="518" data-line-end="523"><code class="inline cm-s-default"><span class="cm-keyword">public</span><span class=""> </span><span class="cm-keyword">interface</span><span class=""> </span><span class="cm-def">Animals</span><span class="">{</span><span class="">
+</span><span class="">  </span><span class="cm-keyword">public</span><span class=""> </span><span class="cm-type">String</span><span class=""> </span><span class="cm-variable">getName</span><span class="">();</span><span class="">
+</span><span class="">  </span><span class="cm-keyword">public</span><span class=""> </span><span class="cm-type">String</span><span class=""> </span><span class="cm-variable">getAnimalSpecies</span><span class="">(); </span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<p data-line="524" data-line-end="525">Any class which implements Animals is required to have <code>getName()</code> and <code>getAnimalSpecies()</code>
+however the class gets to choose how they implement it. </p>
+<p data-line="527" data-line-end="527">Interfaces <em data-line="527" data-line-end="527">CANT</em> have instance variables.</p>
+<a id="break"></a><h1 data-line="529" data-line-end="529">break and continue</h1>
+<p data-line="530" data-line-end="530">these are control statements (things that alter the flow of logic) which can be used inside of any kind of loop (for, while, do while, etc,.))</p>
+<h4 data-line="532" data-line-end="532">break</h4>
+<p data-line="534" data-line-end="534">this will "<em data-line="534" data-line-end="534">break</em>" out of the closest for loop, so if you have a nested for loop, it will only break out of the innermost for loop.</p>
+<pre data-line="536" data-line-end="545"><code class="inline cm-s-default"><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">x</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-operator">-</span><span class="cm-number">1</span><span class="">;</span><span class="">
+</span><span class="cm-keyword">for</span><span class="">(</span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">0</span><span class="">; </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">&lt;=</span><span class=""> </span><span class="cm-number">10</span><span class="">; </span><span class="cm-variable">i</span><span class="cm-operator">++</span><span class="">){</span><span class="">
+</span><span class="">  </span><span class="cm-keyword">if</span><span class="">(</span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">&gt;</span><span class=""> </span><span class="cm-number">5</span><span class=""> </span><span class="cm-operator">&amp;&amp;</span><span class=""> (</span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">%</span><span class=""> </span><span class="cm-number">2</span><span class="">) </span><span class="cm-operator">==</span><span class=""> </span><span class="cm-number">1</span><span class="">){</span><span class="">
+</span><span class="">    </span><span class="cm-variable">x</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">i</span><span class="">;</span><span class="">
+</span><span class="">    </span><span class="cm-keyword">break</span><span class="">;</span><span class="">
+</span><span class="">  }</span><span class="">
+</span><span class="">}</span><span class="">
+</span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">x</span><span class="">);</span><span class="">
+</span></code></pre>
+<p data-line="546" data-line-end="546"><em data-line="546" data-line-end="546">as soon as i is greater than 5, and odd it breaks out of the loop, stopping iteration</em></p>
+<h4 data-line="548" data-line-end="548">continue</h4>
+<p data-line="550" data-line-end="550">this will skip the current iteration, at the point in the code where the continue is</p>
+<pre data-line="552" data-line-end="559"><code class="inline cm-s-default"><span class="cm-keyword">for</span><span class="">(</span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">0</span><span class="">; </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">&lt;=</span><span class=""> </span><span class="cm-number">10</span><span class="">; </span><span class="cm-variable">i</span><span class="cm-operator">++</span><span class="">){</span><span class="">
+</span><span class=""> </span><span class="cm-keyword">if</span><span class="">(</span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">%</span><span class=""> </span><span class="cm-number">2</span><span class=""> </span><span class="cm-operator">==</span><span class=""> </span><span class="cm-number">0</span><span class="">){</span><span class="">
+</span><span class="">   </span><span class="cm-keyword">continue</span><span class="">;</span><span class="">
+</span><span class=""> }</span><span class="">
+</span><span class="">  </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">i</span><span class="">);</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<p data-line="560" data-line-end="560">this code will print out all of the odd numbers between 0 and 10, notice how we skip the evens using <code>continue</code></p>
+<p data-line="562" data-line-end="562">for while loops it's a little different</p>
+<pre data-line="564" data-line-end="573"><code class="inline cm-s-default"><span class="">        </span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">0</span><span class="">;</span><span class="">
+</span><span class="">        </span><span class="cm-keyword">while</span><span class=""> (</span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">&lt;=</span><span class=""> </span><span class="cm-number">10</span><span class="">) {</span><span class="">
+</span><span class="">            </span><span class="cm-keyword">if</span><span class=""> (</span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">%</span><span class=""> </span><span class="cm-number">2</span><span class=""> </span><span class="cm-operator">==</span><span class=""> </span><span class="cm-number">0</span><span class="">) {</span><span class="">
+</span><span class="">                </span><span class="cm-variable">i</span><span class="cm-operator">++</span><span class="">;</span><span class="">
+</span><span class="">                </span><span class="cm-keyword">continue</span><span class="">;</span><span class="">
+</span><span class="">            }</span><span class="">
+</span><span class="">            </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">i</span><span class="cm-operator">++</span><span class="">);</span><span class="">
+</span><span class="">        }</span><span class="">
+</span></code></pre>
+<p data-line="574" data-line-end="574"><em data-line="574" data-line-end="574">since while loops do not iterate through i automatically, we need to do it before we actually reach the <code>continue</code> line</em></p>
+<a id="wrapper"></a><h1 data-line="577" data-line-end="577">Wrappers</h1>
+<p data-line="578" data-line-end="578">Some things in Java require reference types, this is where the Wrapper classes for primitive types become useful.</p>
+<p data-line="580" data-line-end="580">We are not allowed to have an <code>ArrayList&lt;int&gt;</code> but we can do <code>ArrayList&lt;Integer&gt;</code> and it will <em data-line="580" data-line-end="580">interact the same way that primitive ints would.</em> Even when an int is expected like in a parameter, it is <strong data-line="580" data-line-end="580">automatically boxed</strong> and <strong data-line="580" data-line-end="580">unboxed</strong> depending on the context.</p>
+<p data-line="582" data-line-end="582">Wrapper classes also have their own methods which can be useful even outside of the wrapper classes themselves, there's a lot of them so if you are curious just google "javadoc {wrapper class name} class"</p>
+<a id="stacks"></a><h1 data-line="584" data-line-end="584">Stacks</h1>
+<p data-line="585" data-line-end="585">Abstract data structure where things are stored "on top" of eachother.</p>
+<p data-line="587" data-line-end="587"><code>push()</code> - add to top of stack</p>
+<p data-line="589" data-line-end="589"><code>pop()</code> - remove from the top of stack and return</p>
+<p data-line="591" data-line-end="591"><code>peek()</code> - see what's at the top without removing it</p>
+<p data-line="593" data-line-end="593"><code>isEmpty()</code> - returns true if empty, false if not</p>
+<a id="arrayList"></a><h1 data-line="595" data-line-end="595">ArrayList</h1>
+<p data-line="596" data-line-end="596">Abstract Data Structure which is very similar to an array, except that it is dynamically sizeable. We don't need to worry about its length.</p>
+<h1 data-line="597" data-line-end="597">ArrayList Class Methods: add, get, isEmpty, indexOf, remove, size</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table data-line="598" data-line-end="605"><thead data-line="598" data-line-end="598"><tr data-line="598" data-line-end="598"><th data-line="598" data-line-end="598" style="text-align: center;">method</th><th data-line="598" data-line-end="598" style="text-align: center;">return value</th><th data-line="598" data-line-end="598" style="text-align: center;">function</th></tr></thead><tbody data-line="600" data-line-end="605"><tr data-line="600" data-line-end="600"><td data-line="600" data-line-end="600" style="text-align: center;"><code>add()</code></td><td data-line="600" data-line-end="600" style="text-align: center;">boolean</td><td data-line="600" data-line-end="600" style="text-align: center;">adds the parameter into the ArrayList, true if successful, false if fails.</td></tr><tr data-line="601" data-line-end="601"><td data-line="601" data-line-end="601" style="text-align: center;"><code>get(int index)</code></td><td data-line="601" data-line-end="601" style="text-align: center;">E (the type of the ArrayList)</td><td data-line="601" data-line-end="601" style="text-align: center;">retrieve something, doesn't remove it from the list</td></tr><tr data-line="602" data-line-end="602"><td data-line="602" data-line-end="602" style="text-align: center;"><code>isEmpty()</code></td><td data-line="602" data-line-end="602" style="text-align: center;">boolean</td><td data-line="602" data-line-end="602" style="text-align: center;">returns true if empty, false if not</td></tr><tr data-line="603" data-line-end="603"><td data-line="603" data-line-end="603" style="text-align: center;"><code>indexOf(Object o)</code></td><td data-line="603" data-line-end="603" style="text-align: center;">int</td><td data-line="603" data-line-end="603" style="text-align: center;">returns the index when the Object is first found in the list</td></tr><tr data-line="604" data-line-end="604"><td data-line="604" data-line-end="604" style="text-align: center;"><code>remove(int index)</code></td><td data-line="604" data-line-end="604" style="text-align: center;">E (the type of the ArrayList)</td><td data-line="604" data-line-end="604" style="text-align: center;">removes the Object at the index, and returns it.</td></tr><tr data-line="605" data-line-end="605"><td data-line="605" data-line-end="605" style="text-align: center;"><code>size()</code></td><td data-line="605" data-line-end="605" style="text-align: center;">int</td><td data-line="605" data-line-end="605" style="text-align: center;">the number of elements in the ArrayList</td></tr></tbody></table>
+<a id="comparable"></a><h1 data-line="607" data-line-end="607">Comparable Interface (compareTo method)</h1>
+<p data-line="608" data-line-end="608">Comarable is an interface which makes you implement compareTo(), this is utilized by a lot of the built in sorting libraries in Java. Such as Collections.sort().</p>
+<p data-line="610" data-line-end="610">How to implement Comparable:</p>
+<pre data-line="611" data-line-end="622"><code class="inline cm-s-default"><span class="cm-comment">//whatever is in the angled brackets (&lt;&gt;) is what the parameter for compareTo is</span><span class="">
+</span><span class="cm-keyword">public</span><span class=""> </span><span class="cm-keyword">class</span><span class=""> </span><span class="cm-def">Foo</span><span class=""> </span><span class="cm-keyword">implements</span><span class=""> </span><span class="cm-variable">Comparable</span><span class="cm-operator">&lt;</span><span class="cm-variable">Foo</span><span class="cm-operator">&gt;</span><span class="">{</span><span class="">
+</span><span class="">  </span><span class="">
+</span><span class=""> </span><span class="cm-keyword">public</span><span class=""> </span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">compareTo</span><span class="">(</span><span class="cm-variable">Foo</span><span class=""> </span><span class="cm-variable">bar</span><span class="">){</span><span class="">
+</span><span class="">   </span><span class="cm-comment">/*</span><span class="">
+</span><span class="">    </span><span class="cm-comment">* code here decides how these are compared, and returns an int </span><span class="">
+</span><span class="">    </span><span class="cm-comment">* representing the value of the comparison</span><span class="">
+</span><span class="">    </span><span class="cm-comment">*/</span><span class="">
+</span><span class=""> }</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<h1 data-line="623" data-line-end="623">Sorting Data Using Collections.sort()</h1>
+<p data-line="624" data-line-end="624">If you have a collection (array, ArrayList, etc,.) of Objects which implement <code>Comparable</code>, you can sort them. The class/structure it is stored in does not have to implement <code>Comparable</code>, but the objects inside do, in order to be compared to one another. </p>
+<p data-line="626" data-line-end="626">If it does not implement <code>Comparable</code>, you cannot use <code>Collections.sort</code></p>
+<a id="polymorphism"></a><h1 data-line="628" data-line-end="628">Polymorphism</h1>
+<h4 data-line="629" data-line-end="629">⚠️ 1 of the 4 pillars of Object Oriented Programming</h4>
+<h3 data-line="630" data-line-end="630">What is it?</h3>
+<p data-line="631" data-line-end="631">Polymorphism is the idea that something can have many forms, it may sound abstract, and that's because it is, it can be applied to a lot of things in Java. <strong data-line="631" data-line-end="631">See late binding's example</strong> to view how code can produce and call different methods depending on the input, because of inheritance and late binding. </p>
+<p data-line="633" data-line-end="633">Also, very related to the idea of inheritance or implementing, if you have some class <code>Person</code> where <code>Worker</code>, <code>Student</code>, <code>Mother</code> all extend <code>Person</code>. Any code which works for <code>Person</code>, also works for things which extend <code>Person</code>. And even things which extend classes like <code>Worker</code>, <code>Student</code> or <code>Mother</code></p>
+<a id="overloading"></a><h1 data-line="634" data-line-end="634">Method Overloading/Overriding</h1>
+<h4 data-line="635" data-line-end="635">Overloading</h4>
+<p data-line="637" data-line-end="637">the idea that Java can differentiate between methods with the same name, but different parameters.</p>
+<p data-line="639" data-line-end="639"><strong data-line="639" data-line-end="639">ex:</strong></p>
+<pre data-line="640" data-line-end="648"><code class="inline cm-s-default"><span class="cm-keyword">public</span><span class=""> </span><span class="cm-type">int</span><span class=""> </span><span class="cm-def">someMethod</span><span class="">(</span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">x</span><span class="">){ </span><span class="">
+</span><span class="">  ...</span><span class="">
+</span><span class="">} </span><span class="">
+
+</span><span class="cm-keyword">public</span><span class=""> </span><span class="cm-type">String</span><span class=""> </span><span class="cm-def">someMethod</span><span class="">(</span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">x</span><span class="">, </span><span class="cm-type">String</span><span class=""> </span><span class="cm-variable">someString</span><span class="">){</span><span class="">
+</span><span class="">  ...</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<p data-line="649" data-line-end="649">Java knows which of the two the user is expecting to use based on the arguments they pass in when calling the method, the return type is not relevant for overloading. This is usually done within the same class.</p>
+<h4 data-line="651" data-line-end="651">Overriding</h4>
+<p data-line="652" data-line-end="652">When you replace some inherited method with your own, more specialized version of it. </p>
+<a id="iterator"></a><h1 data-line="653" data-line-end="653">Iterators</h1>
+<ul data-line="654" data-line-end="657">
+<li data-line="654" data-line-end="654"><strong data-line="654" data-line-end="654">since ArrayList is inherited from a class called AbstractList, ArrayLists implement a class called Iterator.</strong></li>
+<li data-line="655" data-line-end="656">can call the <code>.iterator()</code> method on classes which implement <em data-line="655" data-line-end="655">Iterable</em>, it should return an <code>Iterator</code> object<ul data-line="656" data-line-end="656">
+<li data-line="656" data-line-end="656">allows you to visit all of the elements inside of a list</li>
+</ul></li>
+<li data-line="657" data-line-end="657">saves the user from having to worry about looping through every element in a list, all we care about is that an <code>Iterator</code> object allows us to go through the list.</li>
+</ul>
+<ol data-line="658" data-line-end="659">
+<li data-line="658" data-line-end="658"><code>.next()</code> - gives you the next element, and advances the iterator, throws an exception if there is no next element.</li>
+<li data-line="659" data-line-end="659"><code>.hasNext()</code> - true if there is, false if not</li>
+</ol>
+<p data-line="661" data-line-end="661"><strong data-line="661" data-line-end="661">ex:</strong> </p>
+<pre data-line="662" data-line-end="675"><code class="inline cm-s-default"><span class="cm-variable">ArrayList</span><span class="cm-operator">&lt;</span><span class="cm-type">String</span><span class="cm-operator">&gt;</span><span class=""> </span><span class="cm-variable">names</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">ArrayList</span><span class="cm-operator">&lt;&gt;</span><span class="">();</span><span class="">
+
+</span><span class="cm-variable">names</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-string">"John"</span><span class="">);</span><span class="">
+</span><span class="cm-variable">names</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-string">"Mary"</span><span class="">);</span><span class="">
+</span><span class="cm-variable">names</span><span class="">.</span><span class="cm-variable">add</span><span class="">(</span><span class="cm-string">"Rose"</span><span class="">);</span><span class="">
+
+</span><span class="cm-variable">Iterator</span><span class="cm-operator">&lt;</span><span class="cm-type">String</span><span class="cm-operator">&gt;</span><span class=""> </span><span class="cm-variable">iter</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">names</span><span class="">.</span><span class="cm-variable">iterator</span><span class="">();</span><span class="">
+
+</span><span class="cm-keyword">while</span><span class="">(</span><span class="cm-variable">iter</span><span class="">.</span><span class="cm-variable">hasNext</span><span class="">()){</span><span class="">
+</span><span class="">   </span><span class="cm-type">String</span><span class=""> </span><span class="cm-variable">value</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">iter</span><span class="">.</span><span class="cm-variable">next</span><span class="">();</span><span class="">
+</span><span class="">   </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">value</span><span class="">);</span><span class="">
+</span><span class="">}</span><span class="">
+</span></code></pre>
+<p data-line="677" data-line-end="677"><em data-line="677" data-line-end="677">the programmer doesnt have to worry about iterating through the list</em></p>
+<h1 data-line="678" data-line-end="678">getClass(), instanceof</h1>
+<h4 data-line="679" data-line-end="679">getClass()</h4>
+<ul data-line="680" data-line-end="681">
+<li data-line="680" data-line-end="680">this is a method of the Object class</li>
+<li data-line="681" data-line-end="681">returns the Class of the dynamic type</li>
+</ul>
+<h4 data-line="683" data-line-end="683">instanceof</h4>
+<ul data-line="684" data-line-end="686">
+<li data-line="684" data-line-end="684">operator, left hand operand is an instance of the right hand operand (this is what it's checking)</li>
+<li data-line="685" data-line-end="685">boolean return value</li>
+<li data-line="686" data-line-end="686">true if the left hand is part of the same class OR is part of a class which <strong data-line="686" data-line-end="686">EXTENDS</strong> the right hand operand.</li>
+</ul>
+<a id="recursion"></a><h1 data-line="687" data-line-end="687">Recursion</h1>
+<p data-line="688" data-line-end="688">The idea that a piece of code can call itself and run on itself.</p>
+<p data-line="690" data-line-end="690"><strong data-line="690" data-line-end="690">ex:</strong></p>
+<pre data-line="691" data-line-end="699"><code class="inline cm-s-default"><span class="cm-keyword">public</span><span class=""> </span><span class="cm-keyword">static</span><span class=""> </span><span class="cm-type">int</span><span class=""> </span><span class="cm-def">factorial</span><span class="">(</span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">num</span><span class="">) {</span><span class="">
+</span><span class="">        </span><span class="cm-keyword">if</span><span class="">(</span><span class="cm-variable">num</span><span class=""> </span><span class="cm-operator">==</span><span class=""> </span><span class="cm-number">0</span><span class="">) {</span><span class="">
+</span><span class="">            </span><span class="cm-keyword">return</span><span class=""> </span><span class="cm-number">1</span><span class="">;</span><span class="">
+</span><span class="">        }</span><span class="cm-keyword">else</span><span class=""> {</span><span class="">
+</span><span class="">            </span><span class="cm-keyword">return</span><span class=""> </span><span class="cm-variable">num</span><span class=""> </span><span class="cm-operator">*</span><span class=""> </span><span class="cm-variable">factorial</span><span class="">(</span><span class="cm-variable">num</span><span class=""> </span><span class="cm-operator">-</span><span class=""> </span><span class="cm-number">1</span><span class="">);</span><span class="">
+</span><span class="">        }</span><span class="">
+</span><span class="">    }</span><span class="">
+</span></code></pre>
+<p data-line="701" data-line-end="701">the <code>if(num -- 0)</code> is the base case, or when your code is supposed to stop.</p>
+<p data-line="703" data-line-end="703">the else block is when the call is made to the function, passing in the value below the current integer, this is important because otherwise it would be an infinite loop of calling the method.</p>
+<p data-line="705" data-line-end="706">if you want more coverage on this, check the <a href="http://www.cs.umd.edu/class/spring2023/cmsc131/exams/final/" data-line="705" data-line-end="705">final exam info page</a>, <a href="http://www.cs.umd.edu/class/spring2023/cmsc131/schedule.shtml" data-line="705" data-line-end="705">schedule for recursion practices</a>, or
+<a href="https://piazza.com/class/ld6hzc2587lx/post/921" data-line="706" data-line-end="706">this piazza post</a>.</p>
+<h1 data-line="707" data-line-end="707">Integer.parseInt(), Double.parseDouble()</h1>
+<p data-line="709" data-line-end="710"><code>Integer.parseInt(String s)</code> - takes some string s and parses it into an integer.
+<code>Double.parseDouble(String s)</code> - takes some string s and parses (processes) it into a double.</p>
+<a id="inheritance"></a><h1 data-line="711" data-line-end="711">Inheritance (extending other classes using "extends")</h1>
+<h4 data-line="712" data-line-end="712">⚠️ 1 of the 4 pillars of Object Oriented Programming</h4>
+<p data-line="713" data-line-end="714"> inheritance is when the derived or child class extends from parent, base, or super class (these all mean the same thing
+)</p>
+<ul data-line="715" data-line-end="723">
+<li data-line="715" data-line-end="715"><code>public class B extends A{...}</code></li>
+<li data-line="716" data-line-end="718">child class <em data-line="716" data-line-end="716">inherits</em> the following: <ul data-line="717" data-line-end="718">
+<li data-line="717" data-line-end="717">instance variables</li>
+<li data-line="718" data-line-end="718">methods</li>
+</ul></li>
+<li data-line="719" data-line-end="719">can define own instance vars and methods</li>
+<li data-line="720" data-line-end="721">child can use <code>super()</code> to call the parent/super class's constructor<ul data-line="721" data-line-end="721">
+<li data-line="721" data-line-end="721">even if you don't include it in your constructor there is an <strong data-line="721" data-line-end="721">implicit</strong> call to the <code>super()</code> constructor</li>
+</ul></li>
+<li data-line="722" data-line-end="722">also use <code>super</code> to call methods from the base class, such as <code>super.toString()</code></li>
+<li data-line="723" data-line-end="723">a reference to a child can be used anywhere where the parent is expected, but not the other way around</li>
+</ul>
+<p data-line="725" data-line-end="725"><code>Person p = new Student()</code> but don't do <code>Student p = new Person()</code></p>
+<h3 data-line="727" data-line-end="727">class hierarchy and Object class</h3>
+<ul data-line="728" data-line-end="733">
+<li data-line="728" data-line-end="733"><strong data-line="728" data-line-end="728">every class is indirectly or directly a child of Object</strong><ul data-line="729" data-line-end="733">
+<li data-line="729" data-line-end="729"><em data-line="729" data-line-end="729">classes which extend nothing implicitly extend Object</em></li>
+<li data-line="730" data-line-end="730">this is why we wrote our equals method for an <code>Object</code> type, so we could compare it to any Object.</li>
+<li data-line="731" data-line-end="731">having the <code>Object</code> parameter is powerful as any class can be input there.</li>
+<li data-line="732" data-line-end="732"><code>@Override</code> tells the compiler that it should expect to be overriding a method from some parent class</li>
+<li data-line="733" data-line-end="733"><code>Object.getClass()</code> is a <code>final</code> method, so we are not allowed to overwrite it for any class</li>
+</ul></li>
+</ul>
+<h1 data-line="735" data-line-end="735">Early and late binding</h1>
+<p data-line="736" data-line-end="736">  lets say that you have this code</p>
+<pre data-line="738" data-line-end="746"><code class="inline cm-s-default"><span class="cm-variable">Faculty</span><span class=""> </span><span class="cm-variable">carol</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">Faculty</span><span class="">(</span><span class="cm-string">"Carol Huffteacher"</span><span class="">, </span><span class="">
+</span><span class="">                           </span><span class="cm-string">"999-99-9999"</span><span class="">, </span><span class="cm-number">1995</span><span class="">);</span><span class="">
+</span><span class="cm-variable">Person</span><span class=""> </span><span class="cm-variable">p</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-variable">carol</span><span class="">;</span><span class="">
+</span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">carol</span><span class="">.</span><span class="cm-variable">toString</span><span class="">());</span><span class="">
+
+</span><span class="cm-comment">//which toString will be called?</span><span class="">
+
+</span></code></pre>
+<p data-line="747" data-line-end="747"><em data-line="747" data-line-end="747">the answer depends on the language you are writing code on, obviously in this class we are dealing with Java</em></p>
+<p data-line="749" data-line-end="749"><strong data-line="749" data-line-end="749">Early (Static) binding</strong> - <code>p</code> is type <code>Person</code>, therefore it should call the <code>Person</code>'s class <code>toString()</code></p>
+<p data-line="751" data-line-end="751"><strong data-line="751" data-line-end="751">Late (Dynamic) binding</strong> - <code>p</code> refers to an <code>Object</code> of type <code>Faculty</code> so it should call the <code>toString()</code> of that class.</p>
+<p data-line="753" data-line-end="753">why do the creators of these languages choose between these two?</p>
+<ul data-line="754" data-line-end="755">
+<li data-line="754" data-line-end="754">early binding is more efficient, decision is made at compile instead of runtime</li>
+<li data-line="755" data-line-end="755">late binding allows for more flexibility in your code/language</li>
+</ul>
+<p data-line="757" data-line-end="757"><strong data-line="757" data-line-end="757">java uses late binding by default but it can be changed.</strong> </p>
+<p data-line="759" data-line-end="759">other languages like C++ use early binding (by default), for our example that means the <code>Faculty.toString()</code> is what is called.</p>
+<h3 data-line="761" data-line-end="761">polymorphism as it pertains to binding</h3>
+<ul data-line="762" data-line-end="762">
+<li data-line="762" data-line-end="762">b/c Java is a late binding language, it's possible for a single variable to refer to Objects of different types, sound familiar? That's right, <strong data-line="762" data-line-end="762">polymorphism!</strong></li>
+</ul>
+<p data-line="764" data-line-end="764"><strong data-line="764" data-line-end="764">ex:</strong></p>
+<pre data-line="766" data-line-end="780"><code class="inline cm-s-default"><span class="">
+</span><span class="cm-variable">Person</span><span class="">[] </span><span class="cm-variable">list</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">Person</span><span class="">[</span><span class="cm-number">3</span><span class="">];</span><span class="">
+</span><span class="cm-variable">list</span><span class="">[</span><span class="cm-number">0</span><span class="">] </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">Person</span><span class="">(</span><span class="cm-string">"Col. Mustard"</span><span class="">, </span><span class="cm-string">"000-00-0000"</span><span class="">);</span><span class="">
+</span><span class="cm-variable">list</span><span class="">[</span><span class="cm-number">1</span><span class="">] </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">Student</span><span class="">(</span><span class="cm-string">"Ms. Scarlet"</span><span class="">, </span><span class="cm-string">"111-11-1111"</span><span class="">, </span><span class="cm-number">1998</span><span class="">, </span><span class="cm-number">3.2</span><span class="">);</span><span class="">
+</span><span class="cm-variable">list</span><span class="">[</span><span class="cm-number">2</span><span class="">] </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-keyword">new</span><span class=""> </span><span class="cm-variable">Faculty</span><span class="">(</span><span class="cm-string">"Prof. Plum"</span><span class="">, </span><span class="cm-string">"222-22-2222"</span><span class="">, </span><span class="cm-number">1981</span><span class="">);</span><span class="">
+
+</span><span class="cm-keyword">for</span><span class="">(</span><span class="cm-type">int</span><span class=""> </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">=</span><span class=""> </span><span class="cm-number">0</span><span class="">; </span><span class="cm-variable">i</span><span class=""> </span><span class="cm-operator">&lt;</span><span class=""> </span><span class="cm-variable">list</span><span class="">.</span><span class="cm-variable">length</span><span class="">; </span><span class="cm-variable">i</span><span class="cm-operator">++</span><span class="">){</span><span class="">
+</span><span class="">  </span><span class="cm-variable">System</span><span class="">.</span><span class="cm-variable">out</span><span class="">.</span><span class="cm-variable">println</span><span class="">(</span><span class="cm-variable">list</span><span class="">[</span><span class="cm-variable">i</span><span class="">].</span><span class="cm-variable">toString</span><span class="">());</span><span class="">
+</span><span class="">}</span><span class="">
+
+</span><span class="cm-comment">/*the toString() that gets printed is from that Object's class</span><span class="">
+</span><span class="cm-comment">*so the student will have their gpa printed out</span><span class="">
+</span><span class="cm-comment">*/</span><span class="">
+</span></code></pre>
+<p data-line="781" data-line-end="781"><em data-line="781" data-line-end="781">polymorphism (here) is the idea that the output of the code has many forms as in, it will output different things depending on the input. if it was early binding, you wouldn't print out the gpa or birthyear/admission for Student and Faculty</em></p>
+<a id="terms"></a><h1 data-line="783" data-line-end="783">Terms You Need to Know</h1>
+<h3 data-line="784" data-line-end="784">Current Object</h3>
+<p data-line="785" data-line-end="785">Refers to "this", the object which is calling a non-static method.</p>
+<h3 data-line="786" data-line-end="786">Index and Indices</h3>
+<p data-line="787" data-line-end="787">Index refers to the way elements in an array or other structure are numbered. 0-based indexing is usually the assumed default, meaning counting starts at 0 and not 1. Indicies refers to multiple index. </p>
+<h3 data-line="788" data-line-end="788">Instance of a Class</h3>
+<p data-line="789" data-line-end="789">An <code>instance</code> is derived from a <code>Class</code>, it's not a type or anything, it's vocabulary for saying like Object from a class. </p>
+<h3 data-line="790" data-line-end="790">Instance Variables</h3>
+<p data-line="791" data-line-end="791">These are the same as fields, instance fields, these all refer to variables that belong to an instance/object of a class. They are unique to each instance of a class and do not conflict.</p>
+<h3 data-line="792" data-line-end="792">Auxiliary / Helper Method</h3>
+<h4 data-line="793" data-line-end="793">Auxiliary Method</h4>
+<p data-line="794" data-line-end="794">this is very commonly used when you want to expand the parameters in a recursive function. Imagine you are writing a method to reverse a String recursively, and you have a method header like <code>public static String reverseString(String s)</code>, in order for this to work recursively, you <em data-line="794" data-line-end="794">CAN</em> have an auxiliary method which keeps track of the <code>index</code>. (For this problem you can just use String.subString(), auxiliary methods aren't required). The method header would look something like this <code>private static String reverseString(String s, int index)</code>, having it private is important because we don't want users calling it, only the public method.</p>
+<h4 data-line="796" data-line-end="796">Helper Method</h4>
+<p data-line="797" data-line-end="797">This is when you want to put some part of the work in a different method, either to avoid code duplication accross methods or to have a cleaner method body. </p></div>
+  </body>
+  <script src="scripts.js"></script>
+
+</html>
